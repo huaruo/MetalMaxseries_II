@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:id="@+id/paired_devices_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!-- 已经配对的设备 -->
+        	<TextView 
+            	android:id="@+id/paired_devices_tv"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:background="@color/dimgray"
+            	android:textColor="@color/white"
+            	android:paddingLeft="5dp"
+            	android:text="Paired Devices"
+            	android:visibility="gone"
+            	/>
+        	<!-- 已配对设备列表 -->
+        	<ListView 
+            	android:id="@+id/paired_devices_lv"
+            	android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:stackFromBottom="true"
+            	android:layout_weight="1"
+            	/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/new_devices_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!-- 扫描出来未配对的设备 -->
+            <TextView
+                android:id="@+id/new_devices_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dimgray"
+                android:textColor="@color/white"
+                android:paddingLeft="5dp"
+                android:text="Other Available Devices"
+                android:visibility="gone"
+                />
+            <!-- 扫描出来未配对的设备列表 -->
+            <ListView 
+                android:id="@+id/new_devices_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stackFromBottom="true"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+        <!-- 扫描按钮 -->
+        <Button 
+            android:id="@+id/bluetooth_scan_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scan for Devices"
+            />
+        
+    </LinearLayout>
+    
+</LinearLayout>

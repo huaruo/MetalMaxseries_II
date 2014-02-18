@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请输入汉字："
+        />
+    <EditText 
+        android:id="@+id/hzpy_hz_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:hint="请输入汉字"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拼音："
+        />
+    <TextView 
+        android:id="@+id/hzpy_py_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/skyblue"
+        />
+    <Button
+        android:id="@+id/hzpy_read_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pin Yin"
+        />
+    <Button
+        android:id="@+id/hzpy_utf16_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="utf16_code"
+        />
+    <Button
+        android:id="@+id/hzpy_utf16tohanzi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="utf_16 to han zi"
+        />   
+   	<Button
+        android:id="@+id/hzpy_utf8_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="utf8_code"
+        />
+    <Button 
+        android:id="@+id/hzpy_asc2hanzi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ascii to hanzi"
+        />
+    <Button 
+        android:id="@+id/hzpy_hanzi2asc_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="hanzi to ascii"
+        />
+    <Button 
+        android:id="@+id/hzpy_gbk2hanzi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gbk to hanzi"
+        />
+    <Button 
+        android:id="@+id/hzpy_gethanzi_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get hanzi"
+        />
+    <Button 
+        android:id="@+id/hzpy_utf8togb2312_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="utf8 to gb2312"
+        />
+    <Button 
+        android:id="@+id/hzpy_gb2312toutf8_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gb2312 to utf8"
+        />
+
+</LinearLayout>

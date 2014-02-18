@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- App Information -->
+    <string name="app_name">II_MetalMaxseries</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- Custom Title -->
+    <string name="back">返回</string>
+    <string name="next">下一步</string>
+    <string name="custom_title">天心</string>
+    
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">   </xliff:g></string>
+
+    <!-- 文件读写 -->
+    <string name="sub_app_name">数据保存</string>
+    <string name="file_name">文件名</string>
+    <string name="file_content">文件内容</string>
+    <string name="button_file_save">保存</string>
+    <string name="button_file_read">读取</string>
+    <string name="file_save_success">保存文件成功</string>
+    <string name="file_save_failed">保存文件失败</string>
+    <string name="file_read_failed">读取文件失败</string>
+    
+</resources>

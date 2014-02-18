@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义字符串数组 -->
+    <!-- Sub Menu Name -->
+    <string-array name = "items_array">
+        <item>CanvasSurfaceView</item>
+        <item>PaintSurfaceView</item>
+        <item>BitmapSurfaceView</item>
+        <item>ClipSurfaceView</item>
+        <item>ListViewLoading</item>
+        <item>WeiXinSimulation</item>
+        <item>DragIcon</item>
+        <item>ListUpdate</item>
+        <item>BluetoothChat</item>
+        <item>FileOperation</item>
+        <item>FileRW</item>
+        <item>WaveDiagram</item>
+        <item>HanZiPinYin</item>
+        <item>ExcelFile</item>
+    </string-array>
+</resources>

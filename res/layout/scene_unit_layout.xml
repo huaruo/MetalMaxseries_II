@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sul_rl"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView 
+        android:id="@+id/sul_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="2dp"
+         android:layout_centerHorizontal="true"
+        />
+    
+	<TextView 
+	    android:id="@+id/sul_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/sul_iv"
+        android:layout_alignBaseline="@id/sul_iv"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="16dp"
+	    />    
+</RelativeLayout>

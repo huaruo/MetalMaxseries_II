@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dana.startappII"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission 
+		android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <!-- 往SDCard写入数据权限 -->
+	<uses-permission
+		android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	
+	<!-- 单元测试，表示被测试的目标包与instrumentation的名称.与<application>元素并列，是<application>元素的兄弟元素。这里的targetPackage必须是我们创建工程时指定的包名。 -->
+    <instrumentation 
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.dana.startappII" 
+        android:label="Tests for My App" 
+        />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        >
+        <!-- 单元测试，用于引入测试库,它必须位于<application>元素体内。是<application>的子元素。 -->
+        <uses-library android:name="android.test.runner" />
+        
+        <activity
+            android:name="com.dana.startappII.Main"
+            android:label="@string/app_name" 
+            android:theme="@style/titlebarstyle"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.dana.startappII.CanvasSurfaceView"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.PaintSurfaceView"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.BitmapSurfaceView"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.ClipSurfaceView"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.ListViewLoading"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.WeiXinSimulation"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.DragIcon"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.ListUpdate"
+            android:label="@string/app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.BluetoothChat"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="stateHidden"
+        />
+        <activity
+            android:name="com.dana.startappII.ScanBluetoothDeviceList"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Dialog"
+            android:configChanges="orientation|keyboardHidden"
+        />
+        <activity
+            android:name="com.dana.startappII.FileCreate"
+            android:label="@string/app_name" 
+            android:windowSoftInputMode="stateHidden"
+        />
+        <activity
+            android:name="com.dana.startappII.FileRW"
+            android:label="@string/sub_app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.WaveDiagram"
+            android:label="@string/sub_app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.HanZiPinYin"
+            android:label="@string/sub_app_name" 
+        />
+        <activity
+            android:name="com.dana.startappII.ExcelFile"
+            android:label="@string/sub_app_name" 
+        />
+    </application>
+
+</manifest>
